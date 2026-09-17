@@ -1,7 +1,22 @@
+#ifnd`ef STUDENT_H
+#define STUDENT_H
+
 #include <string>
-#include <iostream>
 
 class Student {
+
+       // constructors
+    Student(int studentID,std::string firstName,std::string lastName,std::string email,int age,int daysToComplete = {},std::string degreeProgram){
+
+
+        this->studentID = studentID;
+        this->firstName = firstName;
+        this->lastName = lastName;
+        this->email = email;
+        this->age = age;
+        this->daysToComplete = daysToComplete;
+        this->degreeProgram = degreeProgram;
+    }
 
     private:
     std::string studentID = "n/a";
@@ -57,23 +72,8 @@ class Student {
 
     }
 
-    // constructors
-    Student(int studentID,std::string firstName,std::string lastName,std::string email,int age,int daysToComplete = {},std::string degreeProgram){
-
-
-        this->studentID = studentID;
-        this->firstName = firstName;
-        this->lastName = lastName;
-        this->email = email;
-        this->age = age;
-        this->daysToComplete = daysToComplete;
-        this->degreeProgram = degreeProgram;
-    }
-    void Print(std::string message){
-
-       std::cout << message << std::endl;
-
-    }
+ 
+  
 
 
 };
