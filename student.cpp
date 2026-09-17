@@ -9,8 +9,8 @@
       std::string lastName,
       std::string email,
       int age,
-      int daysToComplete[3],
-      std::string degreeProgram
+      int daysToComplete[],
+     //enum degreeProgram
    ){
       
         this->studentID = studentID;
@@ -21,7 +21,7 @@
         for(int i=0; i<3; i++){
             this->daysToComplete[i] = daysToComplete[i];
         }
-        this->degreeProgram = enum DegreeProgram(degreeProgram);
+       // this->degreeProgram = enum DegreeProgram(degreeProgram);
    }
 
 
@@ -72,7 +72,4 @@
     void Student::setAge(int sAge){
         this->age = sAge;
     }
-    void Student::setDegreeProgram(int sDegreeProgram){
-        this->degreeProgram = enum DegreeProgram(sDegreeProgram);
-
-    }
+    // enunm
