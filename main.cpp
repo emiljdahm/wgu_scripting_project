@@ -12,7 +12,7 @@ Student student1 = Student(
     "Smith",
     "john1989@gmail.com",
     20,
-    35,40,55,
+    {30, 40, 55},
     SECURITY
 
 );

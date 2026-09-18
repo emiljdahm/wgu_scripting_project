@@ -10,7 +10,7 @@
         std::string lastName,
         std::string email,
         int age, 
-        int daysToComplete, 
+        int daysToComplete[3], 
         void setDegreeProgram(int caseIndex)
    ){
       this->studentID = studentID;
@@ -18,10 +18,11 @@
       this->lastName = lastName;
       this->email = email;
       this->age = age;
-      this->daysToComplete = daysToComplete;
+      //
       this->degreeProgram = degreeProgram;
         
    }
+   Student::~Student(){};
 
 
 
@@ -50,7 +51,7 @@
     int Student::getDaysToComplete(int index)  {
         return daysToComplete[index];
     }
-    void setDegreeProgram() {
+    enum DegreeProgram Student::getDegreeProgram() {
         return degreeProgram;
     }
     //setters
@@ -70,7 +71,8 @@
     }
     void Student::setAge(int sAge){
         this->age = sAge;
-    }
+    }void Student::setDaysToComplete(){}
+    
     void Student::setDegreeProgram(int caseIndex){
         switch (caseIndex) {
         case 0:

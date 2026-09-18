@@ -28,18 +28,20 @@ class Student {
         std::string lastName,
         std::string email,
         int age, 
-        int daysToComplete, 
+          
         void setDegreeProgram(int caseIndex)
-    ~Student() = default;
+    );
+
+    ~Student();
 
     //getters
     std::string getStudentID();
-    std::string getFirstName(); ;
+    std::string getFirstName();
     std::string getLastName();
     std::string getEmail();
     int getAge();
     int getDaysToComplete(int index);
-    void setDegreeProgram(int caseIndex);
+    enum DegreeProgram getDegreeProgram();
 
     //setters
     void setFirstName(std::string fName);
