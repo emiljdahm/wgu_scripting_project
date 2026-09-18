@@ -4,24 +4,23 @@
 
 
    Student::Student(
-      std::string studentID,
-      std::string firstName,
-      std::string lastName,
-      std::string email,
-      int age,
-      int daysToComplete[],
-     //enum degreeProgram
-   ){
       
-        this->studentID = studentID;
-        this->firstName = firstName;
-        this->lastName = lastName;
-        this->email = email;
-        this->age = age;
-        for(int i=0; i<3; i++){
-            this->daysToComplete[i] = daysToComplete[i];
-        }
-       // this->degreeProgram = enum DegreeProgram(degreeProgram);
+        std::string studentID,
+        std::string firstName,
+        std::string lastName,
+        std::string email,
+        int age, 
+        int daysToComplete, 
+        enum degreeProgram(int caseIndex)
+   ){
+      this->studentID = studentID;
+      this->firstName = firstName;
+      this->lastName = lastName;
+      this->email = email;
+      this->age = age;
+      this->daysToComplete = daysToComplete;
+      this->degreeProgram = degreeProgram;
+        
    }
 
 
