@@ -29,7 +29,7 @@ class Student {
         std::string email,
         int age, 
         int daysToComplete, 
-        enum degreeProgram(int caseIndex));
+        void setDegreeProgram(int caseIndex)
     ~Student() = default;
 
     //getters
@@ -39,7 +39,7 @@ class Student {
     std::string getEmail();
     int getAge();
     int getDaysToComplete(int index);
-    enum DegreeProgram getDegreeProgram();
+    void setDegreeProgram(int caseIndex);
 
     //setters
     void setFirstName(std::string fName);
@@ -47,7 +47,7 @@ class Student {
     void setStudentID(std::string sID);
     void setEmail(std::string sEmail);
     void setAge(int sAge);
-    void setDegreeProgram(enum sDegreeProgram);
+    void setDegreeProgram(int caseIndex);
 
  void Print(std::string message);
 
