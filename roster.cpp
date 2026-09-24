@@ -24,8 +24,9 @@ class Roster {
     ){
         //add user details 
     };
-    void remove(){
+    void remove(studentID){
         //remove student based on ID, if !== id then skip, if no id exist, print error
+        if(studentID == )
     };
     void printAll(){
         //loop through all students and call print()
